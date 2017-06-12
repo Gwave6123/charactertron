@@ -1,15 +1,25 @@
+/* V1.0 */
 head {
-
+	text-align: center;
+	text-anchor: top;
+	font-family: Georgia, serif;
+	font-size: 40px;
+	margin: 100px;
 }
 body {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size: 40px;
-	margin: 100px;
-
+	margin: 75px;
+	background-image: url(back.jpg);
+	background-position: center;
 }
+
 button {
-	background-color: gray;
+	position: static;
+	align-self: bottom;
+	background-color: #283747;
+
     border: thick;
     color: white;
     padding: 15px 32px;
@@ -20,6 +30,19 @@ button {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 button:hover{
-	background-color: darkgray;
+	background-color: #34495E;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
+}
+#top {
+	font-size: 30px;
+}
+#char {
+	position: relative;
+	height: 100px;
+}
+#stats {
+	
+}
+footer {
+	
 }
