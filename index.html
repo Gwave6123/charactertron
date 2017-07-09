@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- V1.2 -->
+<!-- V1.4 -->
 <html>
 
 
@@ -15,17 +15,15 @@
 
 
 
-<body onload="make()">
+<body onload="main()">
 <script src="scripts.js"></script>
 	<div id="top">
 		So you want to be a adventurer, eh? Go out and stab some goblins? Murder some zombies? Rescue damsels and get that sweet loot?<br>
 		Well guess what, now you're a...
 	</div>
 
-	<div id="char">
-		<p>
-			<span id="race"></span> <span id="class"></span> from <span id="location"></span> who <span id="situation"></span>
-		</p>
+	<div id="charbox">
+			<div id="char"><span id="race"></span> <span id="class"></span> from <span id="location"></span> who <span id="situation"></span></div>
 	</div>
 
 	<div id="stats">
@@ -33,7 +31,22 @@
 			Your stats are: <span id="stat1">0</span>, <span id="stat2">0</span>, <span id="stat3">0</span>, <span id="stat4">0</span>, <span id="stat5">0</span>, <span id="stat6">0</span>.
 		</p>
 	</div>
-
+	<div id="raceoptions" style="font-size: 20px">
+		<div class="ckboxwrap" title="Normal PHB Races"><input type="checkbox" id="phbraces">PHB Races</div>
+		<div class="ckboxwrap"><input type="checkbox" id="phbraces2">PHB Races+</div>
+		<div class="ckboxwrap"><input type="checkbox" id="volosguideraces">Volos Guide Races</div>
+		<div class="ckboxwrap"><input type="checkbox" id="volosguidemons">Volos Guide Monsters</div>
+		<div class="ckboxwrap"><input type="checkbox" id="eberronraces">Eberron Races</div>
+		<div class="ckboxwrap"><input type="checkbox" id="eevilraces">Elemental Evil Races</div>
+		<!--<div class="ckbox"></div> -->
+	</div>
+	<div id="setoptions" style="font-size: 20px">
+		<div class="ckboxwrap"><input type="checkbox" id="lowfantasy">Low Fantasy</div>
+		<div class="ckboxwrap"><input type="checkbox" id="highfantasy">High Fantasy</div>
+		<div class="ckboxwrap"><input type="checkbox" id="metropolis">Metropolis</div>
+		<div class="ckboxwrap"><input type="checkbox" id="global">Global Adventures</div>
+		<div class="ckboxwrap"><input type="checkbox" id="planar">Planar Adventures</div>
+	</div>
 	<div id="button">
 		<p>
 			<button onclick="make()">THIS SUCKS GIVE ME ANOTHER</button>
@@ -51,6 +64,8 @@
 
 	<div style="font-size: 14px">
 		Class listing brought to you by <a href="http://weareadventurers.tumblr.com/">We Are Adventurers</a> I think. Read more about it on Github. Rest is made by G-Wave.
+		<br>
+		v1.4
 	</div>
 </footer>
 

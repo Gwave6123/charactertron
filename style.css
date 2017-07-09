@@ -1,16 +1,18 @@
-/* V1.2 */
+/* V1.4 */
 head {
 	text-align: center;
 	text-anchor: top;
 	font-family: Georgia, serif;
 	font-size: 40px;
-	margin: 100px;
+	margin: 50px;
 }
 body {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size: 40px;
-	margin: 75px;
+	margin-right: 75px;
+	margin-left: 75px;
+	margin-top: 10px;
 	background-image: url(back.jpg);
 	background-position: center;
 }
@@ -33,15 +35,45 @@ button:hover{
 	background-color: #34495E;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
 }
+input[type=checkbox] {
+	transform: scale(1.5);
+}
 #top {
-	font-size: 30px;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+#charbox {
+	margin-top: 5px;
+	position: relative;
+	height: 30vh;
 }
 #char {
 	position: relative;
-	height: 100px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 #stats {
-	
+	font-size: 30px;
+
+}
+#raceoptions {
+	border-top: groove;
+	border-bottom: groove;
+	border-color: #e2d9b7;
+}
+.ckboxwrap {
+	display: inline-block;
+	background-color: rgba(229, 221, 199, 0.9);
+	border-left: groove;
+	border-right: groove;
+	border-color: #e2d9b7;
+}
+#setoptions {
+	margin-top: 10px;
+	border-top: groove;
+	border-bottom: groove;
+	border-color: #e2d9b7;
+}
 }
 footer {
 	
